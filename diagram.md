@@ -88,9 +88,9 @@ graph LR
         RLY_Oxygen_Contact --> RLY_Fire_Contact
 
         %% 電磁弁
-        RLY_Oxygen_Contact --> Valve_Oxygen[酸素 電磁弁]:::actuator
-        RLY_Dump_Contact --> Valve_Dump[Dump 電磁弁]:::actuator
-        RLY_Fill_Contact --> Valve_Fill[Fill 電磁弁]:::actuator
+        RLY_Oxygen_Contact --> Valve_Oxygen[酸素電磁弁]:::actuator
+        RLY_Dump_Contact --> Valve_Dump[Dump電磁弁]:::actuator
+        RLY_Fill_Contact --> Valve_Fill[Fill電磁弁]:::actuator
 
         Valve_Oxygen --- GND_GSE
         Valve_Dump --- GND_GSE
@@ -113,7 +113,7 @@ graph LR
         AC_Power[AC 100V 電源]:::ac --> Ign_Relay_Contact
         AC_Power -.-> AC_GND((AC GND / 接地)):::ground
 
-        Ign_Relay_Contact --> Neon[ネオントランス 9kV]:::actuator
+        Ign_Relay_Contact --> Neon[ネオントランス（9kV）]:::actuator
         AC_Power --> Fuse3[ヒューズ]:::component
         Fuse3 --> Neon
         Neon -.-> AC_GND
