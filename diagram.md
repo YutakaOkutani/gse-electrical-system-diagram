@@ -1,14 +1,15 @@
 ```mermaid
+%%{init: {"theme": "base", "look": "classic", "themeVariables": {"background": "#020617", "mainBkg": "#111827", "primaryTextColor": "#f8fafc", "clusterBkg": "#111827", "clusterBorder": "#64748b", "lineColor": "#cbd5e1", "fontFamily": "Arial, sans-serif"}}}%%
 graph LR
-    classDef component fill:#ffffff,stroke:#333333,stroke-width:1.5px,color:#111111;
-    classDef switch fill:#fff5d6,stroke:#8a6500,stroke-width:2px,color:#111111;
-    classDef signal fill:#e8f3ff,stroke:#1f6feb,stroke-width:1.5px,stroke-dasharray:4 3,color:#0b3d70;
-    classDef lanSignal fill:#e8f3ff,stroke:#1f6feb,stroke-width:1.5px,stroke-dasharray:4 3,color:#0b3d70,min-width:78px,height:42px;
-    classDef relay fill:#f5edff,stroke:#7b3fb3,stroke-width:1.5px,color:#221133;
-    classDef actuator fill:#e9f8ee,stroke:#238636,stroke-width:1.5px,color:#12351d;
-    classDef ac fill:#fff0f0,stroke:#b42318,stroke-width:1.5px,color:#4a0f0a;
-    classDef hv fill:#fff4e6,stroke:#d97706,stroke-width:2px,color:#4a2800;
-    classDef ground fill:#f3f4f6,stroke:#4b5563,stroke-width:1.5px,color:#111827;
+    classDef component fill:#1f2937,stroke:#e5e7eb,stroke-width:1.5px,color:#f9fafb;
+    classDef switch fill:#3b2f08,stroke:#facc15,stroke-width:2px,color:#fff7cc;
+    classDef signal fill:#0b2a4a,stroke:#60a5fa,stroke-width:1.5px,stroke-dasharray:4 3,color:#dbeafe;
+    classDef lanSignal fill:#0b2a4a,stroke:#60a5fa,stroke-width:1.5px,stroke-dasharray:4 3,color:#dbeafe,min-width:78px,height:42px;
+    classDef relay fill:#2e1a47,stroke:#c084fc,stroke-width:1.5px,color:#f3e8ff;
+    classDef actuator fill:#0f3a22,stroke:#4ade80,stroke-width:1.5px,color:#dcfce7;
+    classDef ac fill:#4a1414,stroke:#f87171,stroke-width:1.5px,color:#fee2e2;
+    classDef hv fill:#4a2a06,stroke:#fb923c,stroke-width:2px,color:#ffedd5;
+    classDef ground fill:#111827,stroke:#94a3b8,stroke-width:1.5px,color:#e5e7eb;
 
     %% 点火点 (Ignition Point)
     subgraph Ignition_Point [ランチコントローラ]
@@ -121,4 +122,14 @@ graph LR
         Neon --> OUT1[高圧出力: OUT 1]:::hv
         Neon --> OUT2[高圧出力: OUT 2]:::hv
     end
+
+    style Ignition_Point fill:#111827,stroke:#64748b,stroke-width:1.5px,color:#f8fafc;
+    style LAN_Cable fill:#0f172a,stroke:#60a5fa,stroke-width:1.5px,color:#f8fafc;
+    style GSE fill:#111827,stroke:#64748b,stroke-width:1.5px,color:#f8fafc;
+    style Igniter_Box fill:#111827,stroke:#64748b,stroke-width:1.5px,color:#f8fafc;
+    style RLY_Fire fill:#1f1b2e,stroke:#a855f7,stroke-width:1.5px,color:#f8fafc;
+    style RLY_Oxygen fill:#1f1b2e,stroke:#a855f7,stroke-width:1.5px,color:#f8fafc;
+    style RLY_Dump fill:#1f1b2e,stroke:#a855f7,stroke-width:1.5px,color:#f8fafc;
+    style RLY_Fill fill:#1f1b2e,stroke:#a855f7,stroke-width:1.5px,color:#f8fafc;
+    style IGN_RLY fill:#1f1b2e,stroke:#a855f7,stroke-width:1.5px,color:#f8fafc;
 ```
